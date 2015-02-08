@@ -7,3 +7,5 @@ PyYAML
 pytz > dev
 selenium
 sqlparse
+pytest
+pytest-xdist
