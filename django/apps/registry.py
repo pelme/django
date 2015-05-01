@@ -81,6 +81,7 @@ class Apps(object):
                 else:
                     app_config = AppConfig.create(entry)
                 if app_config.label in self.app_configs:
+                    import pdb; pdb.set_trace()
                     raise ImproperlyConfigured(
                         "Application labels aren't unique, "
                         "duplicates: %s" % app_config.label)

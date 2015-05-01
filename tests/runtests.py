@@ -175,6 +175,7 @@ def setup(verbosity, test_labels):
         test_labels_set.add('.'.join(bits))
 
     installed_app_names = set(get_installed())
+
     for modpath, module_name in test_modules:
         if modpath:
             module_label = '.'.join([modpath, module_name])
